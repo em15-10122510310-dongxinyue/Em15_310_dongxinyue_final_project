@@ -1,0 +1,193 @@
+#-----------------------------------------------------------
+# Vivado v2014.4
+# SW Build 1071353 on Tue Nov 18 18:10:08 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sun Jun 28 19:11:01 2015
+# Process ID: 17736
+# Log file: C:/Users/Administrator/Desktop/finalproject1/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/finalproject1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/finalproject1/finalproject1.xpr
+INFO: [Project 1-313] Project file moved from 'D:/xup/embedded/labss/finalproject1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'finalproject1.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx_Vivado_SDK_Win_2014.4_1119_1/Vivado/2014.4/data/ip'.
+WARNING: [BD 41-1303] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+open_project: Time (s): cpu = 00:00:44 ; elapsed = 00:01:14 . Memory (MB): peak = 737.438 ; gain = 103.070
+update_compile_order -fileset sim_1
+report_ip_status -name ip_status 
+open_bd_design {C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/system.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.3 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - btn_4bit
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - led_4bit
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:29 ; elapsed = 00:01:32 . Memory (MB): peak = 745.023 ; gain = 3.477
+upgrade_ip [get_ips  {system_axi_gpio_0_0 system_processing_system7_0_0 system_axi_gpio_0_1 system_processing_system7_0_axi_periph_0 system_rst_processing_system7_0_100M_0}]
+Upgrading 'C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/system.bd'
+INFO: [IP_Flow 19-3422] Upgraded system_axi_gpio_0_0 (AXI GPIO 2.0) from revision 3 to revision 6
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded system_axi_gpio_0_1 (AXI GPIO 2.0) from revision 3 to revision 6
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/system_axi_gpio_0_1.upgrade_log'.
+WARNING: [IP_Flow 19-3501] Upgraded system_processing_system7_0_0 from ZYNQ7 Processing System 5.3 to ZYNQ7 Processing System 5.5, with warnings. Please review the upgrade log 'c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.upgrade_log'.
+INFO: [IP_Flow 19-3670] Detected external interface differences while upgrading IP 'system_processing_system7_0_0'.
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded system_processing_system7_0_axi_periph_0 (AXI Interconnect 2.1) from revision 1 to revision 5
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_processing_system7_0_axi_periph_0/system_processing_system7_0_axi_periph_0.upgrade_log'.
+create_bd_cell: Time (s): cpu = 00:00:08 ; elapsed = 00:00:53 . Memory (MB): peak = 798.043 ; gain = 13.969
+INFO: [IP_Flow 19-3422] Upgraded system_rst_processing_system7_0_100M_0 (Processor System Reset 5.0) from revision 3 to revision 6
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0.upgrade_log'.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of IP instance 'system_processing_system7_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.upgrade_log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/system.bd> 
+upgrade_ip: Time (s): cpu = 00:00:56 ; elapsed = 00:05:08 . Memory (MB): peak = 810.348 ; gain = 44.609
+generate_target all [get_files  C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/system.bd]
+INFO: [BD 41-1378] This design does not contain any "MEMORY" mapped segment for processor processing_system7_0
+INFO: [BD 41-1378] This design does not contain any "MEMORY" mapped segment for processor processing_system7_0
+INFO: [BD 41-1378] This design does not contain any "MEMORY" mapped segment for processor processing_system7_0
+Generated Block Design Tcl file C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Exporting to file C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/hw_handoff/system.hwh
+VHDL Output written to : system.vhd
+VHDL Output written to : system_wrapper.vhd
+Wrote  : <C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/system.bd> 
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'system_processing_system7_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'system_processing_system7_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'system_processing_system7_0_0'...
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] system_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'system_processing_system7_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'system_processing_system7_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'system_axi_gpio_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'system_axi_gpio_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'system_axi_gpio_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'system_axi_gpio_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'system_axi_gpio_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block btn_4bit .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'system_rst_processing_system7_0_100M_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'system_rst_processing_system7_0_100M_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'system_rst_processing_system7_0_100M_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'system_rst_processing_system7_0_100M_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'system_rst_processing_system7_0_100M_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'system_axi_gpio_0_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'system_axi_gpio_0_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'system_axi_gpio_0_1'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'system_axi_gpio_0_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'system_axi_gpio_0_1'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block led_4bit .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'system_xbar_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'system_xbar_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to VHDL. However IP 'system_xbar_0' does not support 'VHDL Synthesis' output products, delivering 'Verilog Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'system_xbar_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to VHDL. However IP 'system_xbar_0' does not support 'VHDL Simulation' output products, delivering 'Verilog Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'system_xbar_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'system_auto_pc_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'system_auto_pc_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to VHDL. However IP 'system_auto_pc_0' does not support 'VHDL Synthesis' output products, delivering 'Verilog Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'system_auto_pc_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to VHDL. However IP 'system_auto_pc_0' does not support 'VHDL Simulation' output products, delivering 'Verilog Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'system_auto_pc_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+generate_target: Time (s): cpu = 00:00:56 ; elapsed = 00:01:59 . Memory (MB): peak = 861.363 ; gain = 32.762
+startgroup
+endgroup
+make_wrapper -files [get_files C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/system.bd] -top
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/hdl/system_wrapper.vhd" into library xil_defaultlib [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/hdl/system.vhd" into library xil_defaultlib [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/hdl/system.vhd:1]
+[Sun Jun 28 19:44:42 2015] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/finalproject1/finalproject1.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 868.281 ; gain = 0.000
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from F:/Xilinx_Vivado_SDK_Win_2014.4_1119_1/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z010/ClockRegion.xml
+Loading clock buffers from F:/Xilinx_Vivado_SDK_Win_2014.4_1119_1/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z010/ClockBuffers.xml
+Loading clock placement rules from F:/Xilinx_Vivado_SDK_Win_2014.4_1119_1/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from F:/Xilinx_Vivado_SDK_Win_2014.4_1119_1/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from F:/Xilinx_Vivado_SDK_Win_2014.4_1119_1/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z010/clg400/Package.xml
+Loading io standards from F:/Xilinx_Vivado_SDK_Win_2014.4_1119_1/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/btn_4bit/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/btn_4bit/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/btn_4bit/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/btn_4bit/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0_board.xdc] for cell 'system_i/rst_processing_system7_0_100M'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0_board.xdc] for cell 'system_i/rst_processing_system7_0_100M'
+Parsing XDC File [c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0.xdc] for cell 'system_i/rst_processing_system7_0_100M'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0.xdc] for cell 'system_i/rst_processing_system7_0_100M'
+Parsing XDC File [c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/system_axi_gpio_0_1_board.xdc] for cell 'system_i/led_4bit/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/system_axi_gpio_0_1_board.xdc] for cell 'system_i/led_4bit/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/system_axi_gpio_0_1.xdc] for cell 'system_i/led_4bit/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/system_axi_gpio_0_1.xdc] for cell 'system_i/led_4bit/U0'
+Parsing XDC File [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw_4bit_tri_i[0]'. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_4bit_tri_i[0]'. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_4bit_tri_i[1]'. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_4bit_tri_i[1]'. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_4bit_tri_i[2]'. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_4bit_tri_i[2]'. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_4bit_tri_i[3]'. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_4bit_tri_i[3]'. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btns_4bit_tri_i[3]'. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btns_4bit_tri_i[3]'. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btns_4bit_tri_i[2]'. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btns_4bit_tri_i[2]'. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btns_4bit_tri_i[1]'. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btns_4bit_tri_i[0]'. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btns_4bit_tri_i[1]'. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btns_4bit_tri_i[0]'. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/finalproject1/finalproject1.srcs/constrs_1/imports/lab2/lab2.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:43 ; elapsed = 00:01:17 . Memory (MB): peak = 1029.824 ; gain = 161.543
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 28 21:04:33 2015...
